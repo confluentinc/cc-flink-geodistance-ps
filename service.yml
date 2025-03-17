@@ -1,5 +1,5 @@
 name: cc-flink-geodistance-ps
-lang: unknown
+lang: Java
 lang_version: unknown
 git:
   enable: true

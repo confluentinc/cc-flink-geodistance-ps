@@ -1,0 +1,32 @@
+plugins {
+    id 'java'
+    id 'com.github.johnrengelman.shadow' version '8.1.1'
+}
+
+group 'io.confluent.ps.flink.geo'
+version '1.0-SNAPSHOT'
+
+repositories {
+    mavenCentral()
+}
+
+dependencies {
+    testImplementation 'org.junit.jupiter:junit-jupiter-api:5.8.1'
+    testRuntimeOnly 'org.junit.jupiter:junit-jupiter-engine:5.8.1'
+    compileOnly 'org.apache.flink:flink-table-api-java:1.20.1'
+    testImplementation 'org.apache.flink:flink-table-api-java:1.20.1'
+}
+
+shadowJar {
+    archiveBaseName = 'GeoDistance'  // Set the base name of the JAR
+    archiveVersion = '1.0.0'  // Set the version of your JAR
+    archiveClassifier.set('all')  // This will give the JAR the classifier 'all', like `your-application-all.jar`
+}
+
+tasks.build {
+    dependsOn shadowJar  // Make sure the shadowJar task runs when the build task runs
+}
+
+test {
+    useJUnitPlatform()
+}
