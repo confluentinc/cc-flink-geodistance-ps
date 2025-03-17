@@ -5,10 +5,6 @@ This repository calculates the distance between geographic points using the [Hav
 ## Build
 The Flink UDF requires a fat jar or uber jar. This Gradle project uses the shadow plugin to generate the fat jar. The GeoDistance class inherits from ScalarFunction, which is part of the Flink Table API.
 
-The Gradle wrapper has been removed from the repository. Run the command below to download the wrapper.
-````
-gradle wrapper
-````
 The command below creates a fat jar under build\libs `GeoDistance-1.0.0-all.jar`
 ````
 gradle build
