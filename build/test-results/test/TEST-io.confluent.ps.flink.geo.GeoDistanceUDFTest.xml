@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite name="io.confluent.ps.flink.geo.GeoDistanceUDFTest" tests="1" skipped="0" failures="0" errors="0" timestamp="2025-03-17T13:39:00" hostname="X3PYCXJN66" time="0.013">
+<testsuite name="io.confluent.ps.flink.geo.GeoDistanceUDFTest" tests="1" skipped="0" failures="0" errors="0" timestamp="2025-03-17T13:50:17" hostname="X3PYCXJN66" time="0.014">
   <properties/>
-  <testcase name="testGeoDistance()" classname="io.confluent.ps.flink.geo.GeoDistanceUDFTest" time="0.013"/>
+  <testcase name="testGeoDistance()" classname="io.confluent.ps.flink.geo.GeoDistanceUDFTest" time="0.014"/>
   <system-out><![CDATA[==> Distance in meters: 327582.0
 ]]></system-out>
   <system-err><![CDATA[]]></system-err>
